@@ -1,0 +1,152 @@
+/* ----------- HERO SECTION ----------- */
+.hero {
+  height: 100vh;
+  background: url('../assets/hero.png') center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: left;
+  padding: 40px;
+  color: #fff;
+  max-width: 700px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.content h5 {
+  font-size: 1.2rem;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.content .stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.content .stats div {
+  background: #000;
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.content .stats div:hover {
+  transform: translateY(-5px);
+}
+
+.content .stats h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #17a2b8;
+  margin-bottom: 5px;
+}
+
+.content .stats p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .content h5 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .content .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
+/* ----------- PAGE SECTIONS ----------- */
+.page-section {
+  padding: 60px 0;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-section {
+  background-image: url('../assets/about.png');
+  color: #FFFF00; /* ✅ Bright Yellow */
+}
+
+.about-section .section-title {
+  color: #FFFF00;
+}
+
+.about-section p,
+.about-section li,
+.about-section h4,
+.about-section span {
+  color: #FFFF00;
+}
+
+.skills-section {
+  background-image: url('../assets/skill.png');
+}
+
+.contact-section {
+  background-image: url('../assets/contact.png');
+}
+
+.admin-section {
+  background-image: url('../assets/admin.png');
+}
+
+/* ✅ Blog Title fix: make styled HTML titles visible */
+.blog-title {
+  color: #000 !important; /* Ensure black text for blog titles */
+}
+
+/* Keep section title white by default */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.page-section ul {
+  padding-left: 20px;
+}
+
+.page-section ul li {
+  margin-bottom: 10px;
+}
